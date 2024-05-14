@@ -1,6 +1,6 @@
-# Mappings
+# Drafts
 
-## S21.G00.40.002
+## Mapping S21.G00.40.002
 
 DSN | Desc | EgaPro
 ----|------|------
