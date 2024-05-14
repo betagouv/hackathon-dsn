@@ -38,4 +38,4 @@ Ce projet a pour but de calculer l'index d'égalité pro d'une entreprise **auto
 ### [Facultatif] Retours sur la qualité des données exploitées
 
 - Une interface dédiée à la doc/schemas de la base aurait été bienvenue
-- Quelques IDs d'entreprises ou salaries de "reference" pourraient être utiles pour tester nos requêtes sur des cas "propres"; Parfois
+- Quelques IDs d'entreprises ou salaries de "reference" pourraient être utiles pour tester nos requêtes sur des cas "propres"; On ne sait pas si on tombe sur des cas "exotiques" ou "obsolètes" qui peuvent nous faire douter.
