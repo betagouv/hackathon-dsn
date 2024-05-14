@@ -6,7 +6,7 @@ Dépôt pour le Hackathon DSN organisé par la Direction interministérielle du 
 
 Toutes les entreprises de plus 50 salariés (>40k) doivent déclarer annuellement leur index d'égalité professionnelle, ce qui les oblige à se replonger dans le détail de leurs données RH pour en extraire les données spécifiques demandées par l'administration afin de pouvoir calculer l'index d'égalité H/F via une [plateforme dédiée](https://egapro.travail.gouv.fr/).
 
-Ce projet a pour but de calculer l'index d'égalité professionnelle d'une entreprise **automatiquement** à partir de la DSN.
+Ce projet a pour but de calculer l'index d'égalité pro d'une entreprise **automatiquement** à partir de la DSN.
 
 ### Solution
 
