@@ -1,42 +1,41 @@
-# Hackathon DSN
+# 💃 Index EgaPro 🕺
 
 Dépôt pour le Hackathon DSN organisé par la Direction interministérielle du numérique.
 
-**📙 Retrouvez le Guide du participant sur Outline en cliquant [ici](https://documentation.beta.numerique.gouv.fr/doc/guide-hackathon-dsn-Vvxa7bq3O0)**
-
-## 👩‍💻 Comment participer ? 
-
-Pour participer au Hackathon vous devez créer un dépôt public (vous pouvez par exemple partir d'un fork de ce dépôt en cliquant [ici](https://github.com/etalab-ia/Hackathon-DSN/fork) puis sur *"Create fork"*).
-
-Votre dépôt servira pour l'évaluation de votre projet à l'issu du Hackathon ! 
-
-Bon courage 🔥!
-
-## 🌸 Rendu
-
-Pour évaluer votre projet merci de compléter ce README avec les informations suivantes : 
-
 ### Description
 
-* *Problématique et proposition de valeur.*
-* *A quelle problématique s’attaque votre projet ?*
-* *Quelle est votre proposition de valeur ?*
+Toutes les entreprises de plus 50 salariés (>40k) doivent déclarer annuellement leur index d'égalité professionnelle, ce qui les oblige à se replonger dans le détail de leurs données RH pour en extraire les données spécifiques demandées par l'administration afin de pouvoir calculer l'index d'égalité H/F via une [plateforme dédiée](https://egapro.travail.gouv.fr/).
+
+Ce projet a pour but de calculer l'index d'égalité professionnelle d'une entreprise **automatiquement** à partir de la DSN.
 
 ### Solution
 
-* *Description de la solution et de ses fonctionnalités*
-* *Quel usage est fait des données ? Que vous permettent-elles de faire ?*
-* *Quelle est la méthode de création de la solution ?*
+1. Extraction des données DSN nécessaires de l'entreprise
+2. Envoi des paramètres au moteur de calcul [publicodes](https://publi.codes/)
+3. Restitution et explication des résultats
 
 ### Impact envisagé
 
-* *Que permet de faire la solution ?*
-* *Qui sont les usagers visés, et qu’en feraient-ils ?*
+- réduire la charge des entreprises en les épargnant d'une démarche coûteuse et redondante (DLNUF)
+- réduire la charge de l'administration quand à la gestion de la plateforme et des déclarations
+- améliorer la qualité et couverture des index (on part des données réelles de la DSN)
+- publier régulièrement les données sur data.gouv
 
 ### Ressources
 
-* *Lien vers la documentation du projet*
+- Un pad de travail pour [quelques notes](https://pad.numerique.gouv.fr/E6f6QzEYTySMdUVbZEa0Mw?both#Variables-Publicodes-)
+- [Les requêtes de test](../drafts.md)
+
+### Equipe
+
+- Christiphe CUQ, URSSAF
+- Jeremy, URSSAF
+- Alain Foret, [ZenDSN](https://zendsn.com/)
+- Alexandre, [ZenDSN](https://zendsn.com/)
+- Arnaud Robin, beta.gouv.fr
+- Julien Bouquillon, beta.gouv.fr
 
 ### [Facultatif] Retours sur la qualité des données exploitées
 
-* *Quelles sont les difficultés que vous avez rencontrées dans l’usage des données ?*
+- Une interface dédiée à la doc/schemas de la base aurait été bienvenue
+- Quelques IDs d'entreprises ou salaries de "reference" pourraient être utiles pour tester nos requêtes sur des cas "propres"; Parfois
