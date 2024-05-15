@@ -36,6 +36,7 @@ Ce projet a pour but de calculer l'index d'égalité pro d'une entreprise **auto
 - Alexandre Caruso, [ZenDSN](https://zendsn.com/)
 - Arnaud Robin, beta.gouv.fr
 - Julien Bouquillon, beta.gouv.fr
+- Maxime Golfier, Fabrique ministère sociaux
 
 ## [Facultatif] Retours sur la qualité des données exploitées
 
