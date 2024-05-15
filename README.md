@@ -1,4 +1,6 @@
-# 💃 Index EgaPro 🕺
+# 💃 ADEGAL 🕺
+
+> Automatisation de la Déclaration EGALité professionnelle “D’égale à égal”
 
 Dépôt pour le [Hackathon DSN](https://www.numerique.gouv.fr/agenda/hackathon-declaration-sociale-nominative-dsn/) organisé par la Direction interministérielle du numérique.
 
@@ -23,6 +25,7 @@ Ce projet a pour but de calculer l'index d'égalité pro d'une entreprise **auto
 
 ## Ressources
 
+- La [présentation jury](./Présentation%20ADEGAL.pdf)
 - Un pad de travail pour [quelques notes](https://pad.numerique.gouv.fr/E6f6QzEYTySMdUVbZEa0Mw?both#Variables-Publicodes-)
 - [Les requêtes de test](../drafts.md)
 - Le [code de l'algorithme de calcul de l'index](./src/publicodes) et [les paramètres nécessaires](./parametres-publicodes.md)
