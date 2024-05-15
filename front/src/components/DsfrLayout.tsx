@@ -20,45 +20,6 @@ const homeLinkPops = {
   title: "Accueil",
 };
 
-const bottomLinks = [
-  {
-    text: "Conditions d'utilisation",
-    linkProps: {
-      href: "/cgu",
-    },
-  },
-  {
-    text: "Statistiques",
-    linkProps: {
-      href: "/stats",
-    },
-  },
-  {
-    text: "Politique de confidentialité",
-    linkProps: {
-      href: "/politique-confidentialite",
-    },
-  },
-  {
-    text: "Aide",
-    linkProps: {
-      href: "/aide",
-    },
-  },
-  {
-    text: "Contribuer sur GitHub",
-    linkProps: {
-      href: `${process.env.NEXT_PUBLIC_APP_REPOSITORY_URL}${
-        process.env.NEXT_PUBLIC_APP_VERSION
-          ? `/releases/tag/v${process.env.NEXT_PUBLIC_APP_VERSION}`
-          : process.env.NEXT_PUBLIC_APP_VERSION_COMMIT
-          ? `/commit/${process.env.NEXT_PUBLIC_APP_VERSION}`
-          : ""
-      }`,
-    },
-  },
-];
-
 export const DsfrLayout = ({ children }: { children: any }) => {
   const path = window.location.pathname;
   return (
@@ -109,14 +70,12 @@ export const DsfrLayout = ({ children }: { children: any }) => {
       <Footer
         brandTop={brandTop}
         accessibility="non compliant"
-        contentDescription={`
-    Pour l'égalité professionnelle au sein de la DSN
-                `}
+        contentDescription={`Pour l'égalité professionnelle au sein de la DSN`}
         homeLinkProps={homeLinkPops}
         license={`Sauf mention explicite de propriété intellectuelle détenue par des tiers, les contenus de ce site sont proposés sous licence`}
         accessibilityLinkProps={{ href: "/accessibilite" }}
         termsLinkProps={{ href: "/mentions-legales" }}
-        bottomItems={[...bottomLinks, headerFooterDisplayItem]}
+        bottomItems={[headerFooterDisplayItem]}
       />
     </div>
   );

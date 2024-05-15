@@ -103,9 +103,17 @@ const Home: NextPage = () => {
     React.useState<boolean>(false);
 
   const onSearch = () => {
-    console.log("search", numSiret);
+    if (!isSIRENValid(numSiret)) {
+      alert("Le numéro de SIRET n'est pas valide");
+      return;
+    }
     setHasCompletedSiret(true);
   };
+
+  const isSIRENValid = (siren: string) => {
+    return /^[0-9]{9}$/.test(siren);
+  };
+
   return (
     <DsfrLayout>
       <Head>
