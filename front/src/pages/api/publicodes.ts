@@ -2,6 +2,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import fs from "fs";
 import Engine from "publicodes";
 import { parse } from "yaml";
+import { publicodesPath } from "@/constants";
 
 type ResponseData = {
   message: string;
@@ -11,7 +12,7 @@ export default function handler(
   _req: NextApiRequest,
   res: NextApiResponse<ResponseData>
 ) {
-  const rules = fs.readFileSync("../../publicodes/modele.yaml").toString();
+  const rules = fs.readFileSync(publicodesPath).toString();
   const engine = new Engine(parse(rules));
   const situation = {
     "index . écart rémunérations . ouvriers . moins de 30 ans . remunération annuelle brute moyenne par EQTP . hommes": 20000,

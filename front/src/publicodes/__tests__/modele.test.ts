@@ -1,8 +1,9 @@
 import fs from "fs";
 import yaml from "yaml";
 import Engine, { formatValue } from "publicodes";
+import { publicodesPath } from "@/constants";
 
-const rules = yaml.parse(fs.readFileSync("../modele.yaml").toString());
+const rules = yaml.parse(fs.readFileSync(publicodesPath).toString());
 
 const testsRemunerations = [
   {
@@ -445,11 +446,9 @@ describe("Modèle de calcul de l'index d'écart de rémunérations", () => {
     expect(evaluated.missingVariables).toMatchSnapshot();
   });
 
-  const defaultSituation = {};
-
   test("ne renvoie pas d'alerte avec la situation par défaut", () => {
     const engine = new Engine(rules);
-    engine.setSituation(defaultSituation);
+    engine.setSituation({});
     const evaluated = engine.evaluate("résultat");
     expect(evaluated.nodeValue).toMatchSnapshot();
     expect(evaluated.missingVariables).toEqual({});
@@ -483,7 +482,6 @@ describe("Modèle de calcul de l'index d'écart de rémunérations", () => {
   // ])(`${name}: $title`, ({ name, values }) => {
   //   const engine = new Engine(rules);
   //   engine.setSituation({
-  //     ...defaultSituation,
   //     ...situation,
   //   });
   //   Object.keys(expected).forEach((key) => {
