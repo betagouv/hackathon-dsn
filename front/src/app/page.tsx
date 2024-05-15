@@ -164,6 +164,16 @@ const Home: NextPage = () => {
               retrouvée dans la base de données de la <b>DSN</b>
             </p>
             <PublicodesViewer situation={situation} />
+            <p className="fr-mt-2w">
+              Pour information,{" "}
+              <a
+                href="https://egapro.travail.gouv.fr/aide-simulation"
+                target="_blank"
+              >
+                c&apos;est ici où figure l&apos;algorithme utilisé pour le
+                calcul
+              </a>
+            </p>
           </>
         )}
       </div>

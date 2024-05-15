@@ -1,6 +1,6 @@
 "use client";
-import { publicodesApiUrl, publicodesRulesApiUrl } from "@/constants";
-import { PublicodesResult } from "@/types";
+import { publicodesApiUrl, publicodesRulesApiUrl } from "@/utils/constants";
+import { PublicodesResult } from "@/utils/types";
 import { CircularProgress } from "@mui/material";
 import React, { useEffect } from "react";
 import { parse, stringify } from "yaml";

@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import fs from "fs";
-import { publicodesPath } from "@/constants";
+import { publicodesPath } from "@/utils/constants";
 
 type ResponseData = {
   rules: string;

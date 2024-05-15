@@ -1,7 +1,7 @@
 import fs from "fs";
 import yaml from "yaml";
 import Engine, { formatValue } from "publicodes";
-import { publicodesPath } from "@/constants";
+import { publicodesPath } from "@/utils/constants";
 
 const rules = yaml.parse(fs.readFileSync(publicodesPath).toString());
 

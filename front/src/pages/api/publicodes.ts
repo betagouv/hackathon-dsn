@@ -2,7 +2,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import fs from "fs";
 import Engine, { Evaluation } from "publicodes";
 import { parse } from "yaml";
-import { publicodesPath } from "@/constants";
+import { publicodesPath } from "@/utils/constants";
 
 type ResponseData = {
   result: Evaluation<any>;

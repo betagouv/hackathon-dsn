@@ -1,7 +1,7 @@
 "use client";
 
 import { startReactDsfr } from "@codegouvfr/react-dsfr/next-appdir";
-import { defaultColorScheme } from "./defaultColorScheme";
+import { defaultColorScheme } from "../utils/defaultColorScheme";
 import Link from "next/link";
 
 declare module "@codegouvfr/react-dsfr/next-appdir" {
