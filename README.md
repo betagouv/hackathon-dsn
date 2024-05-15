@@ -28,7 +28,7 @@ Ce projet a pour but de calculer l'index d'égalité pro d'une entreprise **auto
 - La [présentation jury](./Présentation%20ADEGAL.pdf)
 - [Le jupyter notebook](./egapro_python/egapro.ipynb)
 - Un pad de travail pour [quelques notes](https://pad.numerique.gouv.fr/E6f6QzEYTySMdUVbZEa0Mw?both#Variables-Publicodes-)
-- [Les requêtes de test](../drafts.md)
+- [Les requêtes de test](./drafts.md)
 - Le [code de l'algorithme de calcul de l'index](./src/publicodes) et [les paramètres nécessaires](./parametres-publicodes.md)
 
 ## Equipe
