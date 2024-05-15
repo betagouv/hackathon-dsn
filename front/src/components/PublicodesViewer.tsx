@@ -1,119 +1,79 @@
 "use client";
-import React from "react";
+import { publicodesApiUrl, publicodesRulesApiUrl } from "@/constants";
+import { CircularProgress } from "@mui/material";
+import React, { useEffect } from "react";
+import { parse, stringify } from "yaml";
 
-export function PublicodesViewer() {
+type Props = {
+  situation: Record<string, any>;
+};
+
+export function PublicodesViewer({ situation }: Props) {
+  const [result, setResult] = React.useState<any>(null);
+
+  const callPublicodes = (situation: Record<string, any>) =>
+    fetch(publicodesApiUrl, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        situation,
+      }),
+    }).then((r) => r.json());
+
+  useEffect(() => {
+    callPublicodes(situation).then((r) => {
+      setResult(r);
+    });
+  }, [situation]);
+
+  const explainTrigger = async () => {
+    const rules = await fetch(publicodesRulesApiUrl).then((r) => r.json());
+
+    const jsonRules = {
+      ...parse(rules),
+      ...situation,
+    };
+    situation;
+    const yamlRules = stringify(jsonRules);
+
+    const url = `https://publi.codes/studio/index/note#${encodeURIComponent(
+      yamlRules
+    )}`;
+
+    window.open(url);
+  };
   return (
     <div className="container">
       {/* aFFICHAGE DU SCORE */}
       <p className="fr-title fr-mb-2w">
-        Score global pour l'entreprise <b>BOULANGERIE DE PARIS</b>
+        Score global pour l&apos;entreprise <b>BOULANGERIE DE PARIS</b>
       </p>
-      <h1>92/100 🔥</h1>
-      <div className="fr-table fr-table--bordered fr-mb-2w">
-        <table className="table">
-          <tbody style={{ width: "100%" }}>
-            <tr className="table-light">
-              <th colSpan={2}>rémunérations</th>
-            </tr>
-            <tr>
-              <td>effectifs</td>
-              <td>43</td>
-            </tr>
-            <tr>
-              <td>effectifs valides</td>
-              <td>43</td>
-            </tr>
-            <tr>
-              <td>écart pondéré</td>
-              <td>-2,9&nbsp;%</td>
-            </tr>
-            <tr>
-              <td>calculable</td>
-              <td>oui</td>
-            </tr>
-            <tr>
-              <td>indicateur d'écart de rémunération</td>
-              <td>2,9&nbsp;%</td>
-            </tr>
-            <tr>
-              <td>note</td>
-              <td>37</td>
-            </tr>
-            <tr class="table-light">
-              <th colspan="2">augmentations</th>
-            </tr>
-            <tr>
-              <td>effectifs valides</td>
-              <td>43</td>
-            </tr>
-            <tr>
-              <td>écart pondéré</td>
-              <td>-5&nbsp;%</td>
-            </tr>
-            <tr>
-              <td>calculable</td>
-              <td>oui</td>
-            </tr>
-            <tr>
-              <td>indicateur d'écart d'augmentations</td>
-              <td>5&nbsp;%</td>
-            </tr>
-            <tr>
-              <td>note</td>
-              <td>10</td>
-            </tr>
-            <tr class="table-light">
-              <th colspan="2">promotions</th>
-            </tr>
-            <tr>
-              <td>effectifs valides</td>
-              <td>43</td>
-            </tr>
-            <tr>
-              <td>écart pondéré</td>
-              <td>-5&nbsp;%</td>
-            </tr>
-            <tr>
-              <td>calculable</td>
-              <td>oui</td>
-            </tr>
-            <tr>
-              <td>indicateur d'écart de promotions</td>
-              <td>5&nbsp;%</td>
-            </tr>
-            <tr>
-              <td>note</td>
-              <td>10</td>
-            </tr>
-            <tr class="table-light">
-              <th colspan="2">maternité</th>
-            </tr>
-            <tr>
-              <td>calculable</td>
-              <td>oui</td>
-            </tr>
-            <tr>
-              <td>indicateur de maternité</td>
-              <td>100&nbsp;%</td>
-            </tr>
-            <tr>
-              <td>note</td>
-              <td>15</td>
-            </tr>
-            <tr className="table-light">
-              <th colSpan="2">hautes rémunérations</th>
-            </tr>
-            <tr>
-              <td>calculable</td>
-              <td>oui</td>
-            </tr>
-            <tr>
-              <td>note</td>
-              <td>10</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      {result ? (
+        <>
+          <h1>92/100 🔥</h1>
+          <div className="fr-table fr-table--bordered fr-mb-2w">
+            <table className="table">
+              <tbody style={{ width: "100%" }}>
+                <tr className="table-light">
+                  <th colSpan={2}>rémunérations</th>
+                </tr>
+                <tr>
+                  <td>effectifs</td>
+                  <td>43</td>
+                </tr>
+              </tbody>
+            </table>
+            <button className="fr-btn fr-mt-2w" onClick={explainTrigger}>
+              Détail des calculs
+            </button>
+          </div>
+        </>
+      ) : (
+        <>
+          <p>Calcul en cours...</p>
+          <CircularProgress />
+        </>
+      )}
     </div>
   );
 }
