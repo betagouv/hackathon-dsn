@@ -10,14 +10,14 @@ Ce projet a pour but de calculer l'index d'égalité pro d'une entreprise **auto
 
 ## Solution
 
-1. Extraction des données DSN nécessaires de l'entreprise
-2. Envoi des paramètres au moteur de calcul [publicodes](https://publi.codes/)
+1. Extraction des données DSN nécessaires de l'entreprise via SQL + Python
+2. Envoi des paramètres au moteur de calcul [publi.codes](https://publi.codes)
 3. Restitution et explication des résultats
 
 ## Impact envisagé
 
-- réduire la charge des entreprises en les épargnant d'une démarche coûteuse et redondante (DLNUF)
-- réduire la charge de l'administration quand à la gestion de la plateforme et des déclarations
+- réduire la charge des entreprises avec le DLNUF : des dizaines de milliers d'heures gagnés par an !
+- réduire la charge de l'administration quant à la gestion de la plateforme et des déclarations
 - améliorer la qualité et couverture des index (on part des données réelles de la DSN)
 - publier régulièrement les données sur data.gouv
 
@@ -25,6 +25,7 @@ Ce projet a pour but de calculer l'index d'égalité pro d'une entreprise **auto
 
 - Un pad de travail pour [quelques notes](https://pad.numerique.gouv.fr/E6f6QzEYTySMdUVbZEa0Mw?both#Variables-Publicodes-)
 - [Les requêtes de test](../drafts.md)
+- Le [code de l'algorithme de calcul de l'index](./src/publicodes) et [les paramètres nécessaires](./parametres-publicodes.md)
 
 ## Equipe
 

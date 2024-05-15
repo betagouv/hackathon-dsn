@@ -1,0 +1,90 @@
+# Paramètres utilisés dans le calcul
+
+Le calcul est dans [./src/publicodes](./src/publicodes)
+
+| paramètres                                                                                                                                  | valeur par défaut |
+| ------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| index . écart rémunérations . ouvriers . moins de 30 ans . remunération annuelle brute moyenne par EQTP . hommes                            | 0                 |
+| index . écart rémunérations . ouvriers . moins de 30 ans . remunération annuelle brute moyenne par EQTP . femmes                            | 0                 |
+| index . écart rémunérations . ouvriers . moins de 30 ans . nombre salariés . hommes                                                         | 0                 |
+| index . écart rémunérations . ouvriers . moins de 30 ans . nombre salariés . femmes                                                         | 0                 |
+| index . écart rémunérations . ouvriers . de 30 à 39 ans . remunération annuelle brute moyenne par EQTP . hommes                             | 0                 |
+| index . écart rémunérations . ouvriers . de 30 à 39 ans . remunération annuelle brute moyenne par EQTP . femmes                             | 0                 |
+| index . écart rémunérations . ouvriers . de 30 à 39 ans . nombre salariés . hommes                                                          | 0                 |
+| index . écart rémunérations . ouvriers . de 30 à 39 ans . nombre salariés . femmes                                                          | 0                 |
+| index . écart rémunérations . ouvriers . de 40 à 49 ans . remunération annuelle brute moyenne par EQTP . hommes                             | 0                 |
+| index . écart rémunérations . ouvriers . de 40 à 49 ans . remunération annuelle brute moyenne par EQTP . femmes                             | 0                 |
+| index . écart rémunérations . ouvriers . de 40 à 49 ans . nombre salariés . hommes                                                          | 0                 |
+| index . écart rémunérations . ouvriers . de 40 à 49 ans . nombre salariés . femmes                                                          | 0                 |
+| index . écart rémunérations . ouvriers . de 50 ans et plus . remunération annuelle brute moyenne par EQTP . hommes                          | 0                 |
+| index . écart rémunérations . ouvriers . de 50 ans et plus . remunération annuelle brute moyenne par EQTP . femmes                          | 0                 |
+| index . écart rémunérations . ouvriers . de 50 ans et plus . nombre salariés . hommes                                                       | 0                 |
+| index . écart rémunérations . ouvriers . de 50 ans et plus . nombre salariés . femmes                                                       | 0                 |
+| index . écart rémunérations . employés . moins de 30 ans . remunération annuelle brute moyenne par EQTP . hommes                            | 0                 |
+| index . écart rémunérations . employés . moins de 30 ans . remunération annuelle brute moyenne par EQTP . femmes                            | 0                 |
+| index . écart rémunérations . employés . moins de 30 ans . nombre salariés . hommes                                                         | 0                 |
+| index . écart rémunérations . employés . moins de 30 ans . nombre salariés . femmes                                                         | 0                 |
+| index . écart rémunérations . employés . de 30 à 39 ans . remunération annuelle brute moyenne par EQTP . hommes                             | 0                 |
+| index . écart rémunérations . employés . de 30 à 39 ans . remunération annuelle brute moyenne par EQTP . femmes                             | 0                 |
+| index . écart rémunérations . employés . de 30 à 39 ans . nombre salariés . hommes                                                          | 0                 |
+| index . écart rémunérations . employés . de 30 à 39 ans . nombre salariés . femmes                                                          | 0                 |
+| index . écart rémunérations . employés . de 40 à 49 ans . remunération annuelle brute moyenne par EQTP . hommes                             | 0                 |
+| index . écart rémunérations . employés . de 40 à 49 ans . remunération annuelle brute moyenne par EQTP . femmes                             | 0                 |
+| index . écart rémunérations . employés . de 40 à 49 ans . nombre salariés . hommes                                                          | 0                 |
+| index . écart rémunérations . employés . de 40 à 49 ans . nombre salariés . femmes                                                          | 0                 |
+| index . écart rémunérations . employés . de 50 ans et plus . remunération annuelle brute moyenne par EQTP . hommes                          | 0                 |
+| index . écart rémunérations . employés . de 50 ans et plus . remunération annuelle brute moyenne par EQTP . femmes                          | 0                 |
+| index . écart rémunérations . employés . de 50 ans et plus . nombre salariés . hommes                                                       | 0                 |
+| index . écart rémunérations . employés . de 50 ans et plus . nombre salariés . femmes                                                       | 0                 |
+| index . écart rémunérations . techniciens et agents de maîtrise . moins de 30 ans . remunération annuelle brute moyenne par EQTP . hommes   | 0                 |
+| index . écart rémunérations . techniciens et agents de maîtrise . moins de 30 ans . remunération annuelle brute moyenne par EQTP . femmes   | 0                 |
+| index . écart rémunérations . techniciens et agents de maîtrise . moins de 30 ans . nombre salariés . hommes                                | 0                 |
+| index . écart rémunérations . techniciens et agents de maîtrise . moins de 30 ans . nombre salariés . femmes                                | 0                 |
+| index . écart rémunérations . techniciens et agents de maîtrise . de 30 à 39 ans . remunération annuelle brute moyenne par EQTP . hommes    | 0                 |
+| index . écart rémunérations . techniciens et agents de maîtrise . de 30 à 39 ans . remunération annuelle brute moyenne par EQTP . femmes    | 0                 |
+| index . écart rémunérations . techniciens et agents de maîtrise . de 30 à 39 ans . nombre salariés . hommes                                 | 0                 |
+| index . écart rémunérations . techniciens et agents de maîtrise . de 30 à 39 ans . nombre salariés . femmes                                 | 0                 |
+| index . écart rémunérations . techniciens et agents de maîtrise . de 40 à 49 ans . remunération annuelle brute moyenne par EQTP . hommes    | 0                 |
+| index . écart rémunérations . techniciens et agents de maîtrise . de 40 à 49 ans . remunération annuelle brute moyenne par EQTP . femmes    | 0                 |
+| index . écart rémunérations . techniciens et agents de maîtrise . de 40 à 49 ans . nombre salariés . hommes                                 | 0                 |
+| index . écart rémunérations . techniciens et agents de maîtrise . de 40 à 49 ans . nombre salariés . femmes                                 | 0                 |
+| index . écart rémunérations . techniciens et agents de maîtrise . de 50 ans et plus . remunération annuelle brute moyenne par EQTP . hommes | 0                 |
+| index . écart rémunérations . techniciens et agents de maîtrise . de 50 ans et plus . remunération annuelle brute moyenne par EQTP . femmes | 0                 |
+| index . écart rémunérations . techniciens et agents de maîtrise . de 50 ans et plus . nombre salariés . hommes                              | 0                 |
+| index . écart rémunérations . techniciens et agents de maîtrise . de 50 ans et plus . nombre salariés . femmes                              | 0                 |
+| index . écart rémunérations . ingénieurs et cadres . moins de 30 ans . remunération annuelle brute moyenne par EQTP . hommes                | 0                 |
+| index . écart rémunérations . ingénieurs et cadres . moins de 30 ans . remunération annuelle brute moyenne par EQTP . femmes                | 0                 |
+| index . écart rémunérations . ingénieurs et cadres . moins de 30 ans . nombre salariés . hommes                                             | 0                 |
+| index . écart rémunérations . ingénieurs et cadres . moins de 30 ans . nombre salariés . femmes                                             | 0                 |
+| index . écart rémunérations . ingénieurs et cadres . de 30 à 39 ans . remunération annuelle brute moyenne par EQTP . hommes                 | 0                 |
+| index . écart rémunérations . ingénieurs et cadres . de 30 à 39 ans . remunération annuelle brute moyenne par EQTP . femmes                 | 0                 |
+| index . écart rémunérations . ingénieurs et cadres . de 30 à 39 ans . nombre salariés . hommes                                              | 0                 |
+| index . écart rémunérations . ingénieurs et cadres . de 30 à 39 ans . nombre salariés . femmes                                              | 0                 |
+| index . écart rémunérations . ingénieurs et cadres . de 40 à 49 ans . remunération annuelle brute moyenne par EQTP . hommes                 | 0                 |
+| index . écart rémunérations . ingénieurs et cadres . de 40 à 49 ans . remunération annuelle brute moyenne par EQTP . femmes                 | 0                 |
+| index . écart rémunérations . ingénieurs et cadres . de 40 à 49 ans . nombre salariés . hommes                                              | 0                 |
+| index . écart rémunérations . ingénieurs et cadres . de 40 à 49 ans . nombre salariés . femmes                                              | 0                 |
+| index . écart rémunérations . ingénieurs et cadres . de 50 ans et plus . remunération annuelle brute moyenne par EQTP . hommes              | 0                 |
+| index . écart rémunérations . ingénieurs et cadres . de 50 ans et plus . remunération annuelle brute moyenne par EQTP . femmes              | 0                 |
+| index . écart rémunérations . ingénieurs et cadres . de 50 ans et plus . nombre salariés . hommes                                           | 0                 |
+| index . écart rémunérations . ingénieurs et cadres . de 50 ans et plus . nombre salariés . femmes                                           | 0                 |
+| index . écart augmentations . ouvriers . hommes                                                                                             | 0                 |
+| index . écart augmentations . ouvriers . femmes                                                                                             | 0                 |
+| index . écart augmentations . employés . hommes                                                                                             | 0                 |
+| index . écart augmentations . employés . femmes                                                                                             | 0                 |
+| index . écart augmentations . techniciens et agents de maîtrise . hommes                                                                    | 0                 |
+| index . écart augmentations . techniciens et agents de maîtrise . femmes                                                                    | 0                 |
+| index . écart augmentations . ingénieurs et cadres . hommes                                                                                 | 0                 |
+| index . écart augmentations . ingénieurs et cadres . femmes                                                                                 | 0                 |
+| index . écart promotions . ouvriers . hommes                                                                                                | 0                 |
+| index . écart promotions . ouvriers . femmes                                                                                                | 0                 |
+| index . écart promotions . employés . hommes                                                                                                | 0                 |
+| index . écart promotions . employés . femmes                                                                                                | 0                 |
+| index . écart promotions . techniciens et agents de maîtrise . hommes                                                                       | 0                 |
+| index . écart promotions . techniciens et agents de maîtrise . femmes                                                                       | 0                 |
+| index . écart promotions . ingénieurs et cadres . hommes                                                                                    | 0                 |
+| index . écart promotions . ingénieurs et cadres . femmes                                                                                    | 0                 |
+| index . maternité . nombre total                                                                                                            | 0                 |
+| index . maternité . nombre augmentés                                                                                                        | 0                 |
+| index . hautes rémunérations . femmes                                                                                                       | 0                 |
+| index . hautes rémunérations . hommes                                                                                                       | 0                 |

@@ -2,18 +2,18 @@
 
 ## Mapping S21.G00.40.002
 
-DSN | Desc | EgaPro
-----|------|------
-01  | agriculteur salarié de son exploitation | ouvriers
-02  | artisan ou commerçant salarié de son entreprise | ouvriers
-03  | cadre dirigeant (votant au collège employeur des élections prud'homales) | ingénieurs et cadres
-04  |  autres cadres au sens de la convention collective (ou du statut pour les régimes spéciaux) | ingénieurs et cadres
-05  |  profession intermédiaire (technicien, contremaître, agent de maîtrise, clergé) | techniciens et agents de maitrise
-06  | employé administratif d'entreprise, de commerce, agent de service | employés
-07  | ouvriers qualifiés et non qualifiés y compris ouvriers agricoles | ouvriers
-08  | agent de la fonction publique d'Etat | X
-09  | agent de la fonction publique hospitalière | X
-10  | agent de la fonction publique territoriale | X
+| DSN | Desc                                                                                       | EgaPro                            |
+| --- | ------------------------------------------------------------------------------------------ | --------------------------------- |
+| 01  | agriculteur salarié de son exploitation                                                    | ouvriers                          |
+| 02  | artisan ou commerçant salarié de son entreprise                                            | ouvriers                          |
+| 03  | cadre dirigeant (votant au collège employeur des élections prud'homales)                   | ingénieurs et cadres              |
+| 04  | autres cadres au sens de la convention collective (ou du statut pour les régimes spéciaux) | ingénieurs et cadres              |
+| 05  | profession intermédiaire (technicien, contremaître, agent de maîtrise, clergé)             | techniciens et agents de maitrise |
+| 06  | employé administratif d'entreprise, de commerce, agent de service                          | employés                          |
+| 07  | ouvriers qualifiés et non qualifiés y compris ouvriers agricoles                           | ouvriers                          |
+| 08  | agent de la fonction publique d'Etat                                                       | X                                 |
+| 09  | agent de la fonction publique hospitalière                                                 | X                                 |
+| 10  | agent de la fonction publique territoriale                                                 | X                                 |
 
 ## Requêtes SQL
 
