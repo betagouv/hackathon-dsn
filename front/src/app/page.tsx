@@ -6,7 +6,7 @@ import { NextPage } from "next";
 import { DsfrLayout } from "@/components/DsfrLayout";
 import { PublicodesViewer } from "@/components/PublicodesViewer";
 
-const situation = {
+const fakeSituation = {
   "index . écart rémunérations . ouvriers . moins de 30 ans . remunération annuelle brute moyenne par EQTP . hommes": 20000,
   "index . écart rémunérations . ouvriers . moins de 30 ans . remunération annuelle brute moyenne par EQTP . femmes": 23000,
   "index . écart rémunérations . ouvriers . moins de 30 ans . nombre salariés . hommes": 12,
@@ -101,6 +101,9 @@ const Home: NextPage = () => {
   const [numSiret, setNumSiret] = React.useState<string>("");
   const [hasCompletedSiret, setHasCompletedSiret] =
     React.useState<boolean>(false);
+  const [situation, setSituation] = React.useState<null | Record<string, any>>(
+    null
+  );
 
   const onSearch = () => {
     if (!isSIRENValid(numSiret)) {
@@ -108,6 +111,8 @@ const Home: NextPage = () => {
       return;
     }
     setHasCompletedSiret(true);
+    // TODO: récupérer la situation via le numéro de SIRET
+    setSituation(fakeSituation);
   };
 
   const isSIRENValid = (siren: string) => {
@@ -152,7 +157,7 @@ const Home: NextPage = () => {
             </button>
           </>
         )}
-        {hasCompletedSiret && (
+        {hasCompletedSiret && situation && (
           <>
             <p>
               L&apos;entreprise avec le numéro de SIRET <b>{numSiret}</b> a été
