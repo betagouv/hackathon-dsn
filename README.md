@@ -30,7 +30,7 @@ Ce projet a pour but de calculer l'index d'égalité pro d'une entreprise **auto
 ## Equipe
 
 - Christiphe CUQ, URSSAF
-- Mélanie, DINUM
+- Mélanie Ullmo, DINUM
 - Jeremy Sirugue, URSSAF
 - Alain Foret, [ZenDSN](https://zendsn.com/)
 - Alexandre Caruso, [ZenDSN](https://zendsn.com/)
