@@ -98,45 +98,34 @@ const fakeSituation = {
 };
 
 const Home: NextPage = () => {
-  const [numSiret, setNumSiret] = React.useState<string>("");
+  const [numSiret, setNumSiret] = React.useState<string>("test");
   const [hasCompletedSiret, setHasCompletedSiret] =
-    React.useState<boolean>(false);
+    React.useState<boolean>(true);
   const [situation, setSituation] = React.useState<null | Record<string, any>>(
-    null
+    fakeSituation
   );
 
   const onSearch = () => {
-    if (!isSIRENValid(numSiret)) {
-      alert("Le numéro de SIRET n'est pas valide");
-      return;
-    }
     setHasCompletedSiret(true);
     // TODO: récupérer la situation via le numéro de SIRET
     setSituation(fakeSituation);
   };
 
-  const isSIRENValid = (siren: string) => {
-    return /^[0-9]{9}$/.test(siren);
-  };
-
   return (
     <DsfrLayout>
       <Head>
-        <title>Egalité professionnelle | beta.gouv.fr</title>
+        <title>Démo égalité professionnelle + DSN | beta.gouv.fr</title>
       </Head>
 
       <div>
         <div>
           <h1>Égalité professionnelle via la DSN</h1>
           <p>
-            Bienvenue sur la plateforme de l&apos;égalité professionnelle au
-            sein de la DSN.
-          </p>
-          <p>
-            Vous pouvez utiliser cette plateforme pour vérifier qu&apos;une
-            entreprise respecte bien l&apos;égalité professionnelle.
+            Démo du calcul de laapos;index égalité professionnelle depuis la
+            DSN.
           </p>
         </div>
+
         {!hasCompletedSiret && (
           <>
             <p>Veuillez indiquer le numéro de SIRET de l&apos;entreprise</p>

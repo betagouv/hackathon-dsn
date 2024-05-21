@@ -21,7 +21,8 @@ const homeLinkPops = {
 };
 
 export const DsfrLayout = ({ children }: { children: any }) => {
-  const path = window.location.pathname;
+  const path =
+    (typeof window !== "undefined" && window.location.pathname) || "/";
   return (
     <div>
       <Head>
